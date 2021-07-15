@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Open_Sans';
+    src: url(assets/font/Open_Sans/OpenSans-Regular.ttf );
+}
+@font-face {
+    font-family: 'lato';
+    src: url(assets/font/lato/Lato-Regular.ttf );
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'lato';
+}
+
+body{
+	background-color: #f4f6f8;
+}
+.fs{
+	font-size: 14px;
+}
+
+.bg-color{
+	background-color: #f4f6f8;
+}
+
+.secColor{
+	background-color:#2E3243 ;	
+}
+
+.primaryColor{
+	background-color: #3CC476;
+}
+
+
