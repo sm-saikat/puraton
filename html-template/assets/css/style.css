@@ -13,6 +13,7 @@ ul{
 
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 
 *{
@@ -24,7 +25,18 @@ a{
 
 body{
 	background-color: #f4f6f8;
+	font-family: 'Lato', sans-serif;
 }
+
+/* variables */
+
+:root{
+	--primary-color: #3CC476;
+	--sec-color: #2E3243;
+	--bg-color: #f4f6f8;
+	--border-light: #ddd;
+}
+
 .fs{
 	font-size: 14px;
 }
@@ -42,3 +54,62 @@ body{
 }
 
 
+
+
+/* Products Page Desing */
+/* ==================== */
+
+.all-products{
+	display: flex;
+	flex-direction: row;
+}
+
+.all-products .filter-section{
+	width: 20%;
+	border-right: 2px solid var(--border-light);
+}
+
+.all-products .card{
+	width: 300px;
+}
+
+.all-products .products-section{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.all-products .card-area{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card .price{
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.all-products .products-pagination{
+	margin-top: 50px;
+}
+
+
+
+/* Filter Section */
+
+.label{
+	font-weight: bold;
+}
+
+.filter{
+	margin-top: 40px;
+	width: 80%;
+}
+
+.all-products .filter-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
