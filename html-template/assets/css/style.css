@@ -14,6 +14,10 @@ ul{
 a{
 	text-decoration: none;
 	cursor: pointer;
+	color: var(--primary-color);
+}
+a:hover{
+	color: var(--primary-hover);
 }
 
 *{
@@ -24,7 +28,7 @@ a{
 }
 
 body{
-	background-color: #f4f6f8;
+	background-color: #fff;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -32,10 +36,13 @@ body{
 
 :root{
 	--primary-color: #3CC476;
+	--primary-hover: #278851;
+	--primary-light: #ebfaf1;
 	--sec-color: #2E3243;
 	--bg-color: #f4f6f8;
 	--border-light: #ddd;
 	--light-text: #aaa;
+	--light-dart: rgb(102, 102, 102);
 }
 
 /* Global Classes */
@@ -63,6 +70,13 @@ body{
 	display: none;
 }
 
+
+
+/* Gloabal Design */
+
+button{
+	color: var(--light-dart);
+}
 
 
 
@@ -117,6 +131,13 @@ body{
 
 .all-products .card .posted-by a{
 	color: var(--primary-color);
+}
+
+.all-products .card{
+	transition: all .2s;
+}
+.all-products .card:hover{
+	box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
 }
 
 .all-products .card p{
@@ -202,6 +223,7 @@ body{
 	font-size: 20px;
 	cursor: pointer;
 	color: red;
+	z-index: 2;
 }
 
 /* Card Design End */
@@ -211,15 +233,95 @@ body{
 
 .label{
 	font-weight: bold;
+	font-size: 14px;
 }
 
 .filter{
-	margin-top: 40px;
+	margin-top: 20px;
 	width: 80%;
+	padding-bottom: 20px;
+	border-bottom: 1.5px solid var(--border-light);
 }
 
 .all-products .filter-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+/* Sort By Filter */
+
+.all-products .sort-by button{
+	padding: 5px 25px !important;
+}
+
+.dropdown-item:hover{
+	background-color: var(--primary-light);
+}
+
+/* Check Boxes */
+
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(.7); /* IE */
+  -moz-transform: scale(.7); /* FF */
+  -webkit-transform: scale(.7); /* Safari and Chrome */
+  -o-transform: scale(.7); /* Opera */
+  transform: scale(.7);
+}
+
+.form-check-input[type=checkbox]:checked{
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.form-check-input:checked:focus{
+	border-color: var(--primary-color) !important;
+	color: var(--primary-color) !important;
+	background-color: var(--primary-color) !important;
+}
+
+.form-check-label{
+	font-size: 14px;
+}
+
+
+/* Price Filter */
+
+.all-products .price-filter .price-input{
+	display: flex;
+}
+.all-products .price-filter .form-outline{
+	margin-right: 10px;
+}
+
+.all-products .price-filter input[type="text"]{
+	width: 70px;
+}
+.all-products .price-filter .btn{
+	margin-top: 15px;
+	padding: 5px 20px;
+}
+
+
+/* Category filter */
+
+.all-products .category-filter li{
+	padding: 0px;
+	border: none;
+	font-size: 14px;
+}
+.all-products .category-filter li a{
+	padding: 4px 0px;
+}
+
+.all-products .category-filter .rounded-pill{
+	color: var(--light-dart);
+	padding: 2px;
+	font-size: 14px;
+}
+
+.all-products .category-filter li img{
+	width: 18px;
+	margin-right: 5px;
 }
