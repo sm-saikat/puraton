@@ -38,6 +38,8 @@ body{
 	--light-text: #aaa;
 }
 
+/* Global Classes */
+
 .fs{
 	font-size: 14px;
 }
@@ -52,6 +54,13 @@ body{
 
 .primaryColor{
 	background-color: #3CC476;
+}
+
+.visible{
+	display: block;
+}
+.hide{
+	display: none;
 }
 
 
@@ -184,6 +193,15 @@ body{
 	position: absolute;
 	right: -8%;
 	top: -8%;
+}
+
+.all-products .card .fav-btn{
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	font-size: 20px;
+	cursor: pointer;
+	color: red;
 }
 
 /* Card Design End */
