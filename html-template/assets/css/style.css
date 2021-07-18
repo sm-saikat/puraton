@@ -28,7 +28,7 @@ a:hover{
 }
 
 body{
-	background-color: #F0F2F5;
+	background-color: var(--bg-color);
 	font-family: 'Lato', sans-serif;
 }
 
@@ -39,7 +39,7 @@ body{
 	--primary-hover: #278851;
 	--primary-light: #ebfaf1;
 	--sec-color: #2E3243;
-	--bg-color: #f4f6f8;
+	--bg-color: #f2f3f5;
 	--border-light: #ddd;
 	--light-text: #aaa;
 	--light-dart: rgb(102, 102, 102);
@@ -52,7 +52,7 @@ body{
 }
 
 .bg-color{
-	background-color: #f4f6f8;
+	background-color: var(--bg-color);
 }
 
 .secColor{
